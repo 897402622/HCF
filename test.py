@@ -44,7 +44,7 @@ def main():
     test_loader = init_dataloader(opt, testset)
     # initialize parameters including network, optimizer, loss function, learning rate scheduler
     model = Test_model(opt)
-    save_dir = "/home/Newdisk/wyt/HCFNet-main/experiment/images"
+    save_dir = "./results/HCF"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
     # load model params
